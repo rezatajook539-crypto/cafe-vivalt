@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>کافه ویوالت</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/inde-style.css" />
+</head>
+<body>
+<main>
+
+  <!-- ===== هدر ===== -->
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="کافه ویوالت، صفحه اصلی">
+      <span class="brand-mark">V</span>
+      <span>
+        <strong>ویوالت</strong>
+        <small>کافه و روستری</small>
+      </span>
+    </a>
+    <nav aria-label="منوی اصلی">
+      <a href="#home">خانه</a>
+      <a href="#menu">منو</a>
+      <a href="#story">درباره ما</a>
+      <a href="#reservation">رزرو میز</a>
+    </nav>
+    <button class="cart-button" id="open-cart" type="button">
+      <span data-icon="bag"></span>
+      <span class="cart-label">سفارش من</span>
+      <b id="cart-count" hidden></b>
+    </button>
+  </header>
+
+  <!-- ===== هیرو ===== -->
+  <section class="hero" id="home">
+    <div class="hero-copy">
+      <p class="eyebrow">از سال ۱۳۹۸، یک فنجان صمیمیت</p>
+      <h1>
+        تلخی فقط
+        <br />
+        <em>توی فنجونت.</em>
+      </h1>
+      <p class="hero-description">
+        جایی برای مکث، گفت‌وگو و طعم‌های به‌یادماندنی. قهوه تخصصی و
+        خوراک‌های تازه را با عشق برایت آماده می‌کنیم.
+      </p>
+      <div class="hero-actions">
+        <a class="primary-button" href="#menu">
+          سفارش آنلاین
+          <span data-icon="arrow"></span>
+        </a>
+        <a class="text-button" href="#reservation">
+          رزرو میز
+          <span>←</span>
+        </a>
+      </div>
+      <div class="hero-meta">
+        <div class="avatars" aria-hidden="true">
+          <span>م</span>
+          <span>س</span>
+          <span>ر</span>
+        </div>
+        <div>
+          <div class="rating">
+            <span data-icon="star" data-size="16"></span> ۴.۹
+          </div>
+          <small>انتخاب بیش از ۲,۰۰۰ مهمان</small>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <!-- 📷 عکس شماره ۱ : عکس بزرگ هیرو (فضای کافه) — فایل: images/1.jpg -->
+      <img src="./pic/cafee.jpg" alt="فضای گرم و صمیمی کافه ویوالت" />
+      <div class="hero-note">
+        <span class="note-icon" data-icon="clock"></span>
+        <div>
+          <small>امروز باز هستیم</small>
+          <strong>۸ صبح تا ۱۱ شب</strong>
+        </div>
+      </div>
+      <span class="hero-number">۰۱</span>
+    </div>
+  </section>
+
+  <!-- ===== نوار ویژگی‌ها ===== -->
+  <section class="promise-strip" aria-label="ویژگی‌های کافه">
+    <span>دانه‌های تازه‌برشت</span>
+    <i></i>
+    <span>مواد اولیه روزانه</span>
+    <i></i>
+    <span>فضای آرام و صمیمی</span>
+    <i></i>
+    <span>ارسال سریع و گرم</span>
+  </section>
+
+  <!-- ===== منو ===== -->
+  <section class="menu-section" id="menu">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">محبوب‌ترین‌ها</p>
+        <h2>یک انتخاب خوش‌طعم</h2>
+      </div>
+      <p>
+        از قهوه‌های تخصصی تا شیرینی‌های دست‌ساز؛
+        <br /> هر چیزی همین امروز آماده شده است.
+      </p>
+    </div>
+
+    <!-- دکمه‌های دسته‌بندی با جاوااسکریپت ساخته می‌شوند -->
+    <div class="category-row" id="category-row" role="tablist" aria-label="دسته‌بندی منو"></div>
+
+    <!-- کارت‌های منو با جاوااسکریپت ساخته می‌شوند.
+         📷 عکس‌های شماره ۲ تا ۵ داخل فایل script.js هستند (آرایه menuItems) -->
+    <div class="menu-grid" id="menu-grid"></div>
+  </section>
+
+  <!-- ===== داستان ما ===== -->
+  <section class="story" id="story">
+    <div class="story-image">
+      <!-- 📷 عکس شماره ۶ : عکس باریستا — فایل: images/6.jpg -->
+      <img src="./pic/barista.jpg" alt="باریستای کافه در حال آماده‌سازی سفارش" />
+      <div class="story-stamp">
+        <strong>۵+</strong>
+        <span>سال کنار شما</span>
+      </div>
+    </div>
+    <div class="story-copy">
+      <p class="eyebrow">داستان ما</p>
+      <h2>کافه‌ای برای حال خوبِ همین امروز</h2>
+      <p>
+        ویوالت از یک ایده ساده شروع شد: ساختن جایی که هرکس بتواند برای
+        چند دقیقه از شلوغی شهر فاصله بگیرد. دانه‌ها را خودمان انتخاب
+        می‌کنیم و هر بشقاب، همان روز در آشپزخانه ما آماده می‌شود.
+      </p>
+      <div class="story-points">
+        <span><span data-icon="check"></span> قهوه تخصصی</span>
+        <span><span data-icon="check"></span> آشپزخانه روزانه</span>
+        <span><span data-icon="check"></span> اینترنت پرسرعت</span>
+        <span><span data-icon="check"></span> فضای کار و گفت‌وگو</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== رزرو میز ===== -->
+  <section class="reservation" id="reservation">
+    <div class="reservation-intro">
+      <p class="eyebrow">میزت آماده‌ست</p>
+      <h2>برای یک قرار خوب، از قبل جا بگیر.</h2>
+      <p>
+        تاریخ و ساعت دلخواهت را انتخاب کن؛ ما بهترین میز را برایت کنار
+        می‌گذاریم.
+      </p>
+      <div class="contact-line">
+        <span>رزرو تلفنی</span>
+        <strong dir="ltr">۰۲۱ — ۸۸ ۴۲ ۱۵ ۹۰</strong>
+      </div>
+    </div>
+
+    <div class="reservation-success" id="reservation-success" role="status" hidden>
+      <span data-icon="check" data-size="28"></span>
+      <h3>رزرو شما ثبت شد</h3>
+      <p>تا چند دقیقه دیگر برای تأیید نهایی با شما تماس می‌گیریم.</p>
+      <button type="button" id="new-reservation">رزرو جدید</button>
+    </div>
+
+    <form class="reservation-form" id="reservation-form">
+      <label>
+        نام و نام خانوادگی
+        <input required placeholder="مثلاً سارا احمدی" />
+      </label>
+      <label>
+        شماره تماس
+        <input required inputmode="tel" placeholder="۰۹۱۲ ۱۲۳ ۴۵۶۷" />
+      </label>
+      <label>
+        <span><span data-icon="calendar" data-size="17"></span> تاریخ</span>
+        <input required type="date" />
+      </label>
+      <label>
+        <span><span data-icon="clock" data-size="17"></span> ساعت</span>
+        <select required>
+          <option value="" disabled selected>انتخاب ساعت</option>
+          <option>۱۰:۰۰</option>
+          <option>۱۲:۳۰</option>
+          <option>۱۷:۰۰</option>
+          <option>۱۹:۳۰</option>
+          <option>۲۱:۰۰</option>
+        </select>
+      </label>
+      <label>
+        <span><span data-icon="users" data-size="17"></span> تعداد مهمان</span>
+        <select>
+          <option value="1">۱ نفر</option>
+          <option value="2" selected>۲ نفر</option>
+          <option value="3">۳ نفر</option>
+          <option value="4">۴ نفر</option>
+          <option value="5">۵ نفر و بیشتر</option>
+        </select>
+      </label>
+      <button class="submit-button" type="submit">
+        ثبت رزرو
+        <span data-icon="arrow"></span>
+      </button>
+    </form>
+  </section>
+
+  <!-- ===== فوتر ===== -->
+  <footer>
+    <a class="brand footer-brand" href="#home">
+      <span class="brand-mark">V</span>
+      <span><strong>ویوالت</strong><small>کافه و روستری</small></span>
+    </a>
+    <p>تهران، خیابان فرشته، کوچه آرام، پلاک ۱۸</p>
+    <div class="footer-links">
+      <a href="#menu">منو</a>
+      <a href="#reservation">رزرو میز</a>
+      <a href="mailto:hello@vivalt.cafe">تماس با ما</a>
+    </div>
+    <small>تمامی حقوق برای کافه ویوالت محفوظ است — ۱۴۰۳</small>
+  </footer>
+
+  <!-- ===== کشوی سبد خرید ===== -->
+  <div class="drawer-layer" id="drawer-layer" hidden>
+    <aside class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-label="سفارش من">
+      <div class="drawer-head">
+        <div>
+          <p class="eyebrow">سبد خرید</p>
+          <h2>سفارش من</h2>
+        </div>
+        <button type="button" id="close-cart" aria-label="بستن">
+          <span data-icon="close"></span>
+        </button>
+      </div>
+      <div id="drawer-body" class="drawer-body"></div>
+    </aside>
+  </div>
+
+</main>
+<script src="./js/index-script.js"></script>
+<footer class="footer-brosh">
+  <main  class="footer-brosh-main">
+    <h2 class="code-ti">Code</h2>
+    <h2 class="Apex-ti">Apex</h2>
+  
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 2048 1977"
+     width="150" height="80">
+  <rect width="100%" height="100%" fill="#241c17"/>
+
+  <!-- لوگوی قرمز -->
+  <path fill="#eb0a0f" fill-rule="evenodd"
+        d="M 1570,1506 L 1526,1539 1499,1565 1444,1609 1419,1626 1355,1659 1302,1678 1212,1699 1143,1704 1135,1708 1135,1713 1149,1722 1193,1728 1273,1726 1333,1714 1393,1690 1418,1677 1458,1650 1503,1612 1521,1592 1556,1544 1569,1519 Z"/>
+
+  <!-- مسیر اصلی لوگو -->
+  <path fill="#eb0a0f" fill-rule="evenodd"
+        d="M 748,568
+        C 720,550 698,565 678,593
+        L 571,769
+        C 530,832 482,902 462,962
+        C 437,1030 451,1080 480,1138
+        L 563,1299 582,1326 597,1356
+        C 602,1384 574,1395 551,1397
+        C 568,1414 602,1414 631,1397
+        C 665,1376 682,1345 668,1315
+        L 561,1119
+        C 525,1060 532,1024 563,968
+        L 677,771
+        L 772,781 895,999
+        C 918,1039 905,1076 884,1118
+        L 736,1385
+        C 701,1446 661,1482 619,1483
+        C 553,1491 489,1451 429,1405
+        C 357,1330 305,1240 282,1150
+        C 267,1095 269,1084 271,1094
+        C 249,1150 281,1265 330,1357
+        C 382,1450 456,1529 538,1561
+        C 598,1583 661,1570 714,1541
+        C 764,1507 791,1460 824,1401
+        L 953,1182
+        C 1004,1103 1007,1047 977,945
+        L 899,811 806,661
+        C 773,610 758,581 748,568 Z"/>
+
+  <!-- قوس بالایی قرمز -->
+  <path fill="#eb0a0f"
+        d="M 1425,343
+        C 1360,290 1260,250 1160,250
+        C 1040,245 950,278 890,316
+        C 820,363 800,430 810,499
+        C 818,558 865,640 902,702
+        L 1022,916
+        C 1059,962 1095,995 1150,1011
+        C 1200,1022 1280,1014 1358,1014
+        L 1537,1012 1617,1013
+        C 1655,1010 1674,989 1663,957
+        C 1650,923 1624,873 1606,848
+        L 1499,663 1446,761 1523,899
+        C 1530,912 1513,920 1500,920
+        L 1209,917
+        C 1150,912 1122,878 1094,841
+        L 973,626 923,537
+        C 898,482 908,426 939,383
+        C 1000,314 1090,290 1205,300
+        C 1288,307 1376,330 1425,343 Z"/>
+
+  <!-- زرد -->
+  <path fill="#faeb00" fill-rule="evenodd"
+        d="M 1772,1203
+        C 1750,1135 1698,1090 1614,1074
+        C 1570,1065 1520,1069 1470,1069
+        L 1196,1069
+        C 1130,1070 1080,1100 1050,1130
+        L 909,1366 862,1451 826,1509
+        C 802,1540 801,1566 824,1589
+        C 833,1600 843,1606 853,1606
+        L 1297,1605
+        C 1360,1590 1400,1560 1443,1518
+        L 1502,1423 1579,1292
+        C 1598,1272 1623,1305 1638,1321
+        C 1650,1285 1610,1240 1570,1225
+        C 1520,1208 1495,1240 1475,1268
+        L 1365,1460
+        C 1340,1486 1325,1496 1305,1505
+        L 1263,1509 981,1510
+        C 950,1510 951,1497 966,1466
+        L 1104,1227
+        C 1130,1180 1165,1167 1211,1167
+        L 1533,1167
+        C 1600,1167 1650,1195 1682,1225
+        C 1710,1260 1715,1295 1709,1347
+        C 1700,1450 1640,1540 1572,1624
+        C 1540,1660 1500,1690 1487,1696
+        C 1475,1710 1490,1712 1505,1703
+        C 1620,1640 1700,1540 1740,1467
+        C 1780,1380 1800,1280 1772,1203 Z"/>
+
+  <!-- قوس‌های تزئینی -->
+  <path fill="#a5000a"
+        d="M 445,773
+        C 400,825 370,890 355,950
+        C 330,1050 350,1150 400,1229
+        C 410,1235 410,1218 400,1180
+        C 375,1090 375,990 400,900
+        C 415,850 435,800 445,773 Z"/>
+
+  <path fill="#a5000a"
+        d="M 1238,371
+        C 1330,380 1420,420 1490,470
+        C 1550,520 1590,580 1614,643
+        C 1600,640 1595,620 1580,600
+        C 1520,510 1440,450 1350,410
+        C 1310,395 1270,385 1238,371 Z"/>
+</svg>
+
+
+  </main>
+</footer>
+</body>
+</html>
