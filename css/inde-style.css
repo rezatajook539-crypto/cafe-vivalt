@@ -272,7 +272,7 @@ footer > small { grid-column: 1 / -1; border-top: 1px solid #ffffff14; padding-t
   .cart-button { min-width: 48px; width: 48px; padding: 12px; position: relative; }
   .cart-label { display: none; }
   .cart-button b { position: absolute; top: 4px; left: 4px; }
-  .hero { min-height: auto;  margin-right: 15px;}
+  .hero { min-height: auto;  }
   .hero-copy { padding: 64px 22px 54px; }
   .hero h1 { font-size: 54px; }
   .hero-description { font-size: 14px; }
@@ -282,14 +282,14 @@ footer > small { grid-column: 1 / -1; border-top: 1px solid #ffffff14; padding-t
   .hero-note { right: 20px; bottom: 20px; }
   .promise-strip { overflow: hidden; gap: 30px; justify-content: flex-start; white-space: nowrap; }
   .section-heading { align-items: flex-start; flex-direction: column; }
-  .menu-section { padding-top: 75px; margin-right: 15px; }
+  .menu-section { padding-top: 75px;  }
   .category-row { overflow-x: auto; }
   .menu-grid { grid-template-columns: 1fr; }
   .menu-image { height: 280px; }
-  .story-image { min-height: 420px; margin-right: 15px;}
-  .story-copy { padding: 70px 25px; margin-right: 15px;}
-  .story-points { grid-template-columns: 1fr; margin-right: 15px;}
-  .reservation { padding-top: 75px; padding-bottom: 75px; margin-right: 15px;}
+  .story-image { min-height: 420px; }
+  .story-copy { padding: 70px 25px; }
+  .story-points { grid-template-columns: 1fr; }
+  .reservation { padding-top: 75px; padding-bottom: 75px; }
   .reservation-form { grid-template-columns: 1fr; padding: 22px; }
   footer { grid-template-columns: 1fr; }
   .footer-links { justify-content: flex-start; }
